@@ -4,8 +4,9 @@ import av
 from streamlit_webrtc import webrtc_streamer, WebRtcMode, RTCConfiguration
 
 RTC_CONFIGURATION = RTCConfiguration(
-    {"iceServers": [{"urls": ["stun:23.21.150.121"]}]}
+    {"iceServers": [{"urls": ["stun:stun.l.google.com:19302"]}]}
 )
+
 class VideoProcessor:
     def recv(self, frame):
         img = frame.to_ndarray(format="bgr24")
