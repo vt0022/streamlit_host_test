@@ -4,7 +4,12 @@ import av
 from streamlit_webrtc import webrtc_streamer, WebRtcMode, RTCConfiguration
 
 RTC_CONFIGURATION = RTCConfiguration(
-    {"iceServers": [{"urls": ["stun:stun.ru-brides.com:3478"]}]}
+    {"iceServers": [{
+                     "urls": ["turn:13.250.13.83:3478?transport=udp"],
+                             "username": "YzYNCouZM1mhqhmseWk6",
+                              "credential": "YzYNCouZM1mhqhmseWk6"
+                    }]
+    }
 )
 
 class VideoProcessor:
