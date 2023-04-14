@@ -4,13 +4,7 @@ import av
 from streamlit_webrtc import webrtc_streamer, WebRtcMode, RTCConfiguration
 
 RTC_CONFIGURATION = RTCConfiguration(
-    {
-      "RTCIceServer": [{
-        "urls": ["turn:turn.xxx.dev:5349"],
-        "username": "user",
-        "credential": "password",
-      }]
-    }
+    {"iceServers": [{"urls": ["stun:stun2.l.google.com:19302"]}]}
 )
 
 class VideoProcessor:
