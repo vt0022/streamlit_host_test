@@ -1,5 +1,3 @@
-import cv2
-import numpy as np
 import av
 from streamlit_webrtc import webrtc_streamer, WebRtcMode, RTCConfiguration
 
