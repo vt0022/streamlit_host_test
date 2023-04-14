@@ -12,11 +12,7 @@ RTC_CONFIGURATION = RTCConfiguration(
       }]
     }
 )
-'''
-RTC_CONFIGURATION = RTCConfiguration(
-    {"iceServers": [{"urls": ["stun:stun1.l.google.com:19302"]}]}
-)
-'''
+
 class VideoProcessor:
     def recv(self, frame):
         img = frame.to_ndarray(format="bgr24")
